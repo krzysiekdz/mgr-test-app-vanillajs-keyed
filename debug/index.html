@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>Vanilla-js test</title>
+    <link href="../../css/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="main.js"></script>
+</head>
+
+<body >
+
+    <div class="app">
+
+         
+        <div class="menu">
+            <div >
+                <div class="div-header">
+                    <span class="label label-info header" name="refresh">VanillaJS</span>    
+                    <button class="btn btn-default btn-clear" name="clear">clear</button> 
+                </div>
+                
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="init..." name="input-init">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" name="btn-init">init</button>
+                    </span>
+                </div>
+
+                <!--  
+                ewentualnie click ze wybieram komórkę
+                swap - mozna jeszcze robic swap odlegly czyli np pierwszy z ostatnim, potem np 25 z 75 (przy 100)
+                sprawdzic jak wyglada obliczanie styli gdy tabela jest striped i nie (oraz gdy to moj wlasny styl i klasa boostrap)
+                 -->
+
+
+                <div class="container-action">
+                    <button class="btn btn-default btn-menu" name="addFirst">            add I</button>
+                    <button class="btn btn-default btn-menu" name="addMid">              add II</button>
+                    <button class="btn btn-default btn-menu" name="addLast">             add III</button>
+                    <div> 
+                        add:
+                        <input type="text" class="form-control input100" value="1000" name="input-add">
+                        elements
+                    </div>
+                </div>
+
+                <div class="container-action">
+                    <button class="btn btn-default btn-menu" name="replaceFirst">         replace I</button>
+                    <button class="btn btn-default btn-menu" name="replaceMid">         replace II</button>
+                    <button class="btn btn-default btn-menu" name="replaceLast">         replace III</button>
+                    <div> 
+                        replace:
+                        <input type="text" class="form-control input100" value="500" name="input-replace">
+                        elements
+                    </div>
+                </div>
+
+               
+                <div class="container-action">
+                    <button class="btn btn-default btn-menu" name="updateColFirst">           update I</button>
+                    <button class="btn btn-default btn-menu" name="updateColMid">           update II</button>
+                    <button class="btn btn-default btn-menu" name="updateColLast">           update III</button>
+                    <button class="btn btn-default btn-menu" name="update10">            update evr10</button>
+                    <div class="checkbox"> <label> <input type="checkbox" name="checkbox-update-replace" > replace</label> </div>
+                    <div>
+                        update with: <input type="text" class="form-control input150" value="a" name="input-update-text"> 
+                        col: <input type="text" class="form-control input50" value="2" name="input-update-column">
+                    </div>
+                </div>
+                
+                <div class="container-action">
+                    <button class="btn btn-default btn-menu" name="swapFirst">             swap I</button>
+                    <button class="btn btn-default btn-menu" name="swapMid">             swap II</button>
+                    <button class="btn btn-default btn-menu" name="swapLast">             swap III</button>
+                </div>
+
+                <div class="container-action">
+                    <button class="btn btn-default btn-menu" name="filter10_1">                filter10-1</button>
+                    <button class="btn btn-default btn-menu" name="filter10_2">                filter10-2</button>
+                    <button class="btn btn-default btn-menu" name="filter10_3">                filter10-3</button>
+                </div>
+
+                 <div class="container-action">
+                    <button class="btn btn-default btn-menu" name="fetch1">             fetch 1k</button>
+                    <button class="btn btn-default btn-menu" name="fetch2">             fetch 2k</button>
+                    <button class="btn btn-default btn-menu" name="fetch3">             fetch 10k</button>
+                </div>
+
+
+                <div class="input-group">
+                    <span class="input-group-addon">input:</span>
+                    <input type="text" class="form-control" placeholder="input..." name="input-input">
+                </div>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="edit..." name="input-edit">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" name="btn-edit">edit</button>
+                    </span>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="search for..." name="input-search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" name="btn-search">search</button>
+                    </span>
+                </div>
+
+            </div>    
+        </div>
+
+            
+        <div class="content">
+            <table class="table" name="tableWrap">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Job</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+
+                <tbody name="table">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+   
+</body>
+
+</html>
